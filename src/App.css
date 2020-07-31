@@ -1,0 +1,26 @@
+body{
+    height: 100vh;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.header-container{
+width: 100vw;
+height: 15vh;
+background-color: yellow;
+color: black;
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: xx-large;
+
+}
+.img-logo{
+    height: 100%;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.header-menu{
+    margin-right: 20px;
+}
