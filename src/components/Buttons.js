@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 
 class Task extends Component{
-    constructor(porps){
-        super(porps)
+    constructor(props){
+        super(props)
         this.state = {
 
         }

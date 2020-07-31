@@ -3,6 +3,7 @@ let id = 6;
 
 module.exports = {
   getSaying: (req, res) => {
+    // console.log("hit back end")
     res.status(200).send(sayings);
   },
   addSaying: (req, res) => {
