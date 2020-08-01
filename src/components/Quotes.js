@@ -93,7 +93,7 @@ class Quotes extends Component {
             className = 'add-quote'
           >
             <input
-              placeholder="Fav Adam Quote!"
+              placeholder="Fav Adam Quote/Moment."
               type="text"
               name="saying"
               value={this.state.saying}
