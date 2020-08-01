@@ -1,20 +1,19 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
-class Task extends Component{
-    constructor(props){
-        super(props)
-        this.state = {
+class Buttons extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-        }
-    }
-
-
-
-    render(){
-        return(
-            <div></div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <button onClick = {()=> this.props.deleteQuote(this.props.id)}>Delete</button>
+        <button onClick = {this.props.toggleEdit}>Edit</button>
+      </div>
+    );
+  }
 }
 
-export default Task
+export default Buttons;

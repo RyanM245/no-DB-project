@@ -1,5 +1,4 @@
 const express = require("express");
-const sayings = require("../sayings.json");
 const app = express();
 const ctrl = require("./ctrl");
 app.use(express.json());

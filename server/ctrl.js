@@ -11,7 +11,6 @@ module.exports = {
     const newSaying = {
       id,
       saying,
-      edit: false,
     };
     id++;
     sayings.push(newSaying);
