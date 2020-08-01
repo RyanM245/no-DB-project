@@ -9,8 +9,11 @@ class Buttons extends Component {
   render() {
     return (
       <div>
-        <button onClick = {()=> this.props.deleteQuote(this.props.id)}>Delete</button>
-        <button onClick = {this.props.toggleEdit}>Edit</button>
+        <button onClick={() => this.props.deleteQuote(this.props.id)}
+        className = 'delete-btn'>
+          Delete
+        </button>
+        <button onClick={this.props.toggleEdit}>Edit</button>
       </div>
     );
   }

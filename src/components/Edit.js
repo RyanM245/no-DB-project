@@ -5,16 +5,15 @@ class Edit extends Component {
     super(props);
     this.state = {};
   }
-saveQuote = () => {
-    this.props.editQuote(this.props.id, this.props.saying)
-    this.props.toggleEdit()
-}
+  saveQuote = () => {
+    this.props.editQuote(this.props.id, this.props.saying);
+    this.props.toggleEdit();
+  };
   render() {
     return (
       <div>
-        <button onClick = {this.saveQuote}
-        >Save</button>
-        <button onClick = {this.props.toggleEdit}>Cancel</button>
+        <button onClick={this.saveQuote}>Save</button>
+        <button onClick={this.props.toggleEdit}>Cancel</button>
       </div>
     );
   }

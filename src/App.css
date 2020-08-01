@@ -1,29 +1,56 @@
-body{
-    height: 100vh;
-    background-color: rgb(214, 205, 191);
-    text-align: center;
+body {
+  height: 100vh;
+  background-color: rgb(214, 205, 191);
+  text-align: center;
+}
+.app{
+    font-family: 'Hind Siliguri', sans-serif;
 }
 
-.header-container{
-width: 100vw;
-height: 15vh;
-background-color: rgb(233, 233, 38);
-color: black;
-display: flex;
-align-items: center;
-justify-content: space-between;
-font-size: xx-large;
+.header-container {
+  width: 100vw;
+  height: 15vh;
+  background-color: rgb(252, 58, 9);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: xx-large;
+}
+.img-logo {
+  height: 100%;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.header-title {
+  align-self: center;
+}
+
+.header-menu {
+  margin-right: 20px;
+}
+input {
+  border-radius: 5%;
+  border-width: 0;
+  height: 5vh;
+  font-size: x-large;
 
 }
-.img-logo{
-    height: 100%;
-    margin-left: 10px;
-    border-radius: 50%;
-}
-.header-title{
-    align-self: center;
-}
 
-.header-menu{
-    margin-right: 20px;
+.main-input {
+  margin-right: 20px;
+}
+/* .main-button {
+
+} */
+.add-quote {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.quote {
+  margin-top: 50px;
+  font-size: xx-large;
+}
+.delete-btn{
+    margin-right: 10px;
 }
