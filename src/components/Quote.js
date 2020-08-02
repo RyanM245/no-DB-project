@@ -29,6 +29,7 @@ class Quote extends Component {
               onChange={this.universalHandler}
               name="saying"
               type="text"
+              className ='edit-input'
             //   value={this.props.data.saying}
             />
             <Edit
@@ -41,7 +42,7 @@ class Quote extends Component {
         ) : (
           //edit is false
           <div>
-            <h1>{this.props.data.saying}</h1>
+            <h1 className = 'saying'>{this.props.data.saying}</h1>
             <Buttons
               deleteQuote={this.props.deleteQuote}
               id={this.props.data.id}

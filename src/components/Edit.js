@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import ArrowLeft from './ArrowLeftIcon'
+import Save from './Save'
+
 
 class Edit extends Component {
   constructor(props) {
@@ -11,9 +14,11 @@ class Edit extends Component {
   };
   render() {
     return (
-      <div>
-        <button onClick={this.saveQuote}>Save</button>
-        <button onClick={this.props.toggleEdit}>Cancel</button>
+      <div className = 'btn-holder'>
+        <Save onClick={this.saveQuote}
+        className = 'save'/>
+        <ArrowLeft onClick={this.props.toggleEdit}
+        className = 'arrowLeft'/>
       </div>
     );
   }

@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import EditCircleIcon from './EditCircleIcon'
+import XIcon from './XIcon'
+
+
 
 class Buttons extends Component {
   constructor(props) {
@@ -8,12 +12,12 @@ class Buttons extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={() => this.props.deleteQuote(this.props.id)}
-        className = 'delete-btn'>
-          Delete
-        </button>
-        <button onClick={this.props.toggleEdit}>Edit</button>
+      <div className = 'btn-holder'>
+         <XIcon onClick={() => this.props.deleteQuote(this.props.id)}
+        className = 'delete-btn'/>
+
+        <EditCircleIcon onClick={this.props.toggleEdit}
+        className = 'edit-icon'/>
       </div>
     );
   }

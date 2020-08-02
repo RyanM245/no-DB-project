@@ -5,17 +5,17 @@ body {
   background-size: cover;
   text-align: center;
   background-repeat: no-repeat;
-height: 100vh;
-width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
-.app{
-    font-family: 'Hind Siliguri', sans-serif;
-    color: white;
+.app {
+  font-family: "Hind Siliguri", sans-serif;
+  color: white;
 }
 
 .header-container {
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
   background-color: rgb(252, 58, 9);
   opacity: 75%;
   color: white;
@@ -31,6 +31,7 @@ width: 100vw;
 }
 .header-title {
   align-self: center;
+  margin-right: 80px;
 }
 
 .header-menu {
@@ -41,26 +42,70 @@ input {
   border-width: 0;
   height: 5vh;
   font-size: x-large;
-
 }
 
 .main-input {
-  margin-right: 20px;
+  margin-right: 50px;
 }
-/* .main-button {
+button {
+  font-size: xx-large;
+  background-color: black;
+  color: white;
+  border-width: 1px;
+  border-radius: 10%;
+  border-color: red;
+  cursor: pointer;
+}
+/* .main-button{
 
 } */
 .add-quote {
   margin-bottom: 40px;
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62%;
 }
 .quote {
+  height: 150px;
   margin-top: 50px;
   font-size: xx-large;
   background-color: black;
-  width: 60%;
+  width: 62%;
   border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.delete-btn{
-    margin-right: 10px;
+.saying {
+  margin-bottom: 25px;
+}
+.edit-input {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.delete-btn {
+  margin-right: 10px;
+  height: 45px;
+  width: 45px;
+ cursor: pointer;
+}
+.edit-icon {
+  height: 45px;
+  width: 45px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.arrowLeft{
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+}
+.save{
+  height: 55px;
+  width: 55px;
+  margin-right: 25px;
+  cursor: pointer;
+
 }

@@ -4,6 +4,7 @@ import Header from "./Header";
 import Quote from "./Quote";
 
 
+
 class Quotes extends Component {
   constructor() {
     super();
@@ -19,6 +20,7 @@ class Quotes extends Component {
   componentDidMount() {
     this.getQuotes();
   }
+
 
   getQuotes = () => {
     axios
