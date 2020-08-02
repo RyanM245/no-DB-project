@@ -70,6 +70,7 @@ class Quotes extends Component {
   };
 
   render() {
+    const {saying} = this.state
     //   console.log(this.state.sayings)
     const mappedSayings = this.state.sayings.map((el, i) => {
       return (
@@ -89,7 +90,7 @@ class Quotes extends Component {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              this.addQuote(this.state.saying);
+              this.addQuote(saying);
               this.setState({ saying: "" });
             }}
             className = 'add-quote'
@@ -98,7 +99,7 @@ class Quotes extends Component {
               placeholder="Fav Adam Quote/Moment."
               type="text"
               name="saying"
-              value={this.state.saying}
+              value={saying}
               onChange={(e) => this.universalHandler(e)}
               className="main-input"
             />

@@ -9,14 +9,16 @@ class Edit extends Component {
     this.state = {};
   }
   saveQuote = () => {
-    this.props.editQuote(this.props.id, this.props.saying);
-    this.props.toggleEdit();
+    const {editQuote,toggleEdit,id,saying} = this.props
+    editQuote(id, saying);
+    toggleEdit();
   };
   render() {
     return (
       <div className = 'btn-holder'>
         <Save onClick={this.saveQuote}
-        className = 'save'/>
+        className = 'save'
+        />
         <ArrowLeft onClick={this.props.toggleEdit}
         className = 'arrowLeft'/>
       </div>

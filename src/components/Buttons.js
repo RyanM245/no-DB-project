@@ -15,9 +15,10 @@ class Buttons extends Component {
       <div className = 'btn-holder'>
          <XIcon onClick={() => this.props.deleteQuote(this.props.id)}
         className = 'delete-btn'/>
-
+        
         <EditCircleIcon onClick={this.props.toggleEdit}
-        className = 'edit-icon'/>
+        className = 'edit-icon'
+        />
       </div>
     );
   }

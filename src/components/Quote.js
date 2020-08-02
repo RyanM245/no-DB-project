@@ -20,6 +20,8 @@ class Quote extends Component {
   };
 
   render() {
+    const {editQuote, deleteQuote, data} = this.props
+    const {saying} = this.state
     return (
       <div className="quote">
         {this.state.edit ? (
@@ -34,18 +36,18 @@ class Quote extends Component {
             />
             <Edit
               toggleEdit={this.toggleEdit}
-              editQuote={this.props.editQuote}
-              id={this.props.data.id}
-              saying={this.state.saying}
+              editQuote={editQuote}
+              id={data.id}
+              saying={saying}
             />
           </div>
         ) : (
           //edit is false
           <div>
-            <h1 className = 'saying'>{this.props.data.saying}</h1>
+            <h1 className = 'saying'>{data.saying}</h1>
             <Buttons
-              deleteQuote={this.props.deleteQuote}
-              id={this.props.data.id}
+              deleteQuote={deleteQuote}
+              id={data.id}
               toggleEdit={this.toggleEdit}
             />
           </div>
