@@ -57,7 +57,7 @@ input {
   width: 50px;
   color: red;
   cursor: pointer;
-  border: 3px solid red;
+  border: 3px solid white;
   border-radius: 5%;
 }
 .add-quote {
