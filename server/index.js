@@ -9,4 +9,4 @@ app.delete("/api/sayings/:id", ctrl.deleteSaying);
 app.put("/api/sayings/:id", ctrl.editSaying);
 
 const port = 5000;
-app.listen(port, () => console.log(`I will survive on ${5000}`));
+app.listen(port, () => console.log(`I will survive on ${port}`));

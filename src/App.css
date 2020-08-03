@@ -23,20 +23,30 @@ body {
   justify-content: space-between;
   font-size: 50px;
   font-weight: bold;
-  
 }
 .img-logo {
   height: 100%;
   margin-left: 10px;
   border-radius: 50%;
- 
+}
+.beatsaber{
+  height: 250px;
+  display: none;
+}
+.beatsaber:hover {
+  display: block;
+  float: right;
+  margin-right: 50px;
+  height: 250px;
+  width: auto;
+  margin-bottom: 50px;
 }
 .header-title {
   align-self: center;
   margin-right: 80px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #00ddff;
-  ;
+  -webkit-text-stroke-color:#fff685 ;
+  /* mix-blend-mode: ; */
 }
 
 .header-menu {
@@ -58,10 +68,10 @@ input {
   color: #fff685;
 }
 
-.main-button{
+.main-button {
   height: 50px;
   width: 50px;
-  color: #FF1D58;
+  color: #ff1d58;
   cursor: pointer;
   border: 3px solid #fff685;
   border-radius: 5%;
@@ -104,9 +114,12 @@ textarea {
   text-align: center;
   height: 64px;
   border-radius: 8px;
-  background-color:#0049b7 ;
-  border:1px solid #00ddff;
+  background-color: #0049b7;
+  border: 1px solid #00ddff;
   color: #fff685;
+  background-image: url(https://i.imgflip.com/4abk3x.gif);
+  background-position: center;
+
 }
 .delete-btn {
   margin-right: 10px;

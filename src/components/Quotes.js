@@ -86,7 +86,7 @@ class Quotes extends Component {
     return (
       <div>
         <Header />
-        <div>
+        <main>
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -107,8 +107,11 @@ class Quotes extends Component {
               
             
           </form>
-        </div>
+        </main>
         {mappedSayings}
+
+        <img src = 'https://i.imgflip.com/4abk3x.gif'
+        className = "beatsaber"/>
       </div>
     );
   }
