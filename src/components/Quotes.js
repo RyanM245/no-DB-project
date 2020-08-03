@@ -37,6 +37,7 @@ class Quotes extends Component {
       .then((res) => {
         this.setState({
           sayings: res.data,
+          saying: ""
         });
       })
       .catch((err) => console.log(err));
@@ -102,7 +103,7 @@ class Quotes extends Component {
               onChange={(e) => this.universalHandler(e)}
               className="main-input"
             />
-            <EnterIcon onClick={() => this.addQuote} className="main-button"/>
+            <EnterIcon onClick={() => this.addQuote(saying)} className="main-button"/>
               
             
           </form>

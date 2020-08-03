@@ -10,19 +10,20 @@ body {
 }
 .app {
   font-family: "Hind Siliguri", sans-serif;
-  color: white;
+  color: #fff685;
 }
 
 .header-container {
   width: 100vw;
   height: 10vh;
-  background-color: rgb(252, 58, 9);
-  opacity: 75%;
-  color: white;
+  border-bottom: black 3px solid;
+  color: #0049b7;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: xx-large;
+  font-size: 50px;
+  font-weight: bold;
+  
 }
 .img-logo {
   height: 100%;
@@ -33,6 +34,9 @@ body {
 .header-title {
   align-self: center;
   margin-right: 80px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #00ddff;
+  ;
 }
 
 .header-menu {
@@ -49,15 +53,17 @@ input {
 
 .main-input {
   margin-right: 50px;
-  
+  border: 1px solid #00ddff;
+  background-color: #0049b7;
+  color: #fff685;
 }
 
 .main-button{
   height: 50px;
   width: 50px;
-  color: red;
+  color: #FF1D58;
   cursor: pointer;
-  border: 3px solid white;
+  border: 3px solid #fff685;
   border-radius: 5%;
 }
 .add-quote {
@@ -72,13 +78,13 @@ input {
   height: 150px;
   margin-top: 50px;
   font-size: xx-large;
-  background-color: black;
   width: 62%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-  border: 1px solid white;
+  border: 1px solid #00ddff;
+  background-color: #0049b7;
   border-radius: 8px;
 
   margin-left: 15px;
@@ -98,6 +104,9 @@ textarea {
   text-align: center;
   height: 64px;
   border-radius: 8px;
+  background-color:#0049b7 ;
+  border:1px solid #00ddff;
+  color: #fff685;
 }
 .delete-btn {
   margin-right: 10px;
