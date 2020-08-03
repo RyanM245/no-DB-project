@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Header from "./Header";
 import Quote from "./Quote";
+import EnterIcon from './Enter'
 
 class Quotes extends Component {
   constructor() {
@@ -101,9 +102,9 @@ class Quotes extends Component {
               onChange={(e) => this.universalHandler(e)}
               className="main-input"
             />
-            <button onClick={() => this.addQuote} className="main-button">
-              Enter
-            </button>
+            <EnterIcon onClick={() => this.addQuote} className="main-button"/>
+              
+            
           </form>
         </div>
         {mappedSayings}

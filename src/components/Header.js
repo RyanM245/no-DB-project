@@ -1,4 +1,5 @@
 import React from "react";
+import Menu from './Menu'
 
 
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
             alt = "Adam"
             className = "img-logo"/>
             <div className = "header-title"> Adam's Happy Place </div>
-            <div className = "header-menu"> Menu </div>
+            <Menu className = "header-menu"/>
         </header>
     )
 
