@@ -38,7 +38,7 @@ body {
   margin-right: 20px;
 }
 input {
-  border-radius: 5%;
+  border-radius: 8px;
   border-width: 0;
   height: 5vh;
   font-size: x-large;
@@ -52,7 +52,7 @@ button {
   background-color: black;
   color: white;
   border-width: 1px;
-  border-radius: 10%;
+  border-radius: 8px;
   border-color: red;
   cursor: pointer;
 }
@@ -73,23 +73,36 @@ button {
   font-size: xx-large;
   background-color: black;
   width: 62%;
-  border-radius: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border: 1px solid white;
+  border-radius: 8px;
+
+  margin-left: 15px;
 }
 .saying {
   margin-bottom: 25px;
 }
 .edit-input {
   margin-bottom: 20px;
-  margin-top: 5px;
+  margin-top: 15px;
+  resize: horizontal;
+}
+textarea {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: large;
+  width: 400px;
+  text-align: center;
+  height: 60px;
+  border-radius: 8px;
 }
 .delete-btn {
   margin-right: 10px;
   height: 45px;
   width: 45px;
- cursor: pointer;
+  cursor: pointer;
 }
 .edit-icon {
   height: 45px;
@@ -97,15 +110,14 @@ button {
   margin-left: 25px;
   cursor: pointer;
 }
-.arrowLeft{
+.arrowLeft {
   height: 55px;
   width: 55px;
   cursor: pointer;
 }
-.save{
+.save {
   height: 55px;
   width: 55px;
   margin-right: 25px;
   cursor: pointer;
-
 }

@@ -3,8 +3,6 @@ import axios from "axios";
 import Header from "./Header";
 import Quote from "./Quote";
 
-
-
 class Quotes extends Component {
   constructor() {
     super();
@@ -20,7 +18,6 @@ class Quotes extends Component {
   componentDidMount() {
     this.getQuotes();
   }
-
 
   getQuotes = () => {
     axios
@@ -70,7 +67,7 @@ class Quotes extends Component {
   };
 
   render() {
-    const {saying} = this.state
+    const { saying } = this.state;
     //   console.log(this.state.sayings)
     const mappedSayings = this.state.sayings.map((el, i) => {
       return (
@@ -79,7 +76,8 @@ class Quotes extends Component {
           key={i}
           deleteQuote={this.deleteQuote}
           editQuote={this.editQuote}
-          className = "quote"
+          universalHandler={this.universalHandler}
+          className="quote"
         />
       );
     });
@@ -93,7 +91,7 @@ class Quotes extends Component {
               this.addQuote(saying);
               this.setState({ saying: "" });
             }}
-            className = 'add-quote'
+            className="add-quote"
           >
             <input
               placeholder="Fav Adam Quote/Moment."
@@ -109,7 +107,6 @@ class Quotes extends Component {
           </form>
         </div>
         {mappedSayings}
-        
       </div>
     );
   }

@@ -7,7 +7,7 @@ class Quote extends Component {
     super(props);
     this.state = {
       edit: false,
-      saying: "",
+      saying: props.data.saying,
     };
   }
   toggleEdit = () => {
@@ -20,31 +20,32 @@ class Quote extends Component {
   };
 
   render() {
-    const {editQuote, deleteQuote, data} = this.props
-    const {saying} = this.state
+    const { editQuote, deleteQuote, data } = this.props;
+    const { saying } = this.state;
     return (
       <div className="quote">
         {this.state.edit ? (
           //   edit is true
           <div>
-            <input
+            <textarea
               onChange={this.universalHandler}
               name="saying"
               type="text"
-              className ='edit-input'
-            //   value={this.props.data.saying}
-            />
+              className="edit-input"
+              value={saying}
+            ></textarea>
             <Edit
               toggleEdit={this.toggleEdit}
               editQuote={editQuote}
               id={data.id}
               saying={saying}
+              universalHandler={this.props.universalHandler}
             />
           </div>
         ) : (
           //edit is false
           <div>
-            <h1 className = 'saying'>{data.saying}</h1>
+            <h1 className="saying">{data.saying}</h1>
             <Buttons
               deleteQuote={deleteQuote}
               id={data.id}
